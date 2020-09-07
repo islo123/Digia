@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+   
+}
+header img {
+    width: 20%;
+    
+   
+}
+header{
+    
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+    
+}
+header button{
+    background-color: rgba(50, 180, 212, 0.473);
+    padding: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+header nav {
+    display: none;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    padding-left: 0;
+    z-index: 1;
+}
+header nav ul li{
+    border-top: rgb(122, 117, 117) 1px;
+    border-bottom: solid rgb(122, 117, 117) 1px;
+}
+header nav ul li:first-child{
+    border-top: solid rgb(122, 117, 117) 1px;
+}
+header nav ul li:last-child{
+    border-bottom: none;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 1rem;
+}
+header nav.show{
+    display: block;
+}
+
+main{
+    background-image: url("https://www.sll.fi/app/uploads/sites/72/2018/11/poluton-1024x683.jpg");
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem 0 1rem 0;
+    position: relative;
+}
+main h3, main h4{
+    text-align: center;
+    color: white;
+    max-width: 70%;
+    font-size: 30px;
+    margin: 0 auto;
+    text-shadow: 1px black;
+    position: relative;
+}
+main h4{
+    color: rgb(255, 60, 60);
+   
+}
+main::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+section{
+    background-color: white;
+}
+section p{
+    padding: 30px 0 30px 0;
+    font-size: 25px;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+article h4{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+
+}
+article{
+    background-image: url("https://www.sll.fi/app/uploads/sites/72/2018/11/poluton-1024x683.jpg");
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-size: contain;
+    margin: 20px;
+   
+}
+#img1, #img2, #img3{
+    transition: transform 2s;
+}
+article img {
+    width: 20%;
+    
+}  
+.three-img{
+    display: block;
+}
+article img.img{
+    transform: rotate(180deg);
+}
+#text, #text2, #text3{
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    display:none;
+}
+#text.textjs, #text2.textjs, #text3.textjs{
+    display: block;
+}
+
+@media only screen and (min-width: 770px) {
+        header img{
+            width: 10%;
+        }
+        header button{
+            display: none;
+        }
+        header{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        header nav{
+            display: block;
+            
+        }
+        header nav ul {
+            display: flex;
+            
+        }
+        header nav ul li {
+            border: none;
+        }
+        header nav ul li:first-child{
+            border-top: none;
+        }
+        header nav ul li a{
+            
+            font-size: 17px;
+    
+        }
+        article img {
+            width: 10%;
+        }
+  }
+  @media only screen and (min-width: 1300px) {
+        header{
+            z-index: none;
+        }
+        main{
+            padding-top: 120px;
+            padding-bottom: 200px;
+            
+        }
+        section{
+            max-width: 70%;
+            position: absolute;
+            top: 450px;
+            left: 15%;
+            right: 15%;
+        }
+        article{
+            margin-top: 200px;
+        }
+        article img {
+            width: 20%;
+          
+            
+        }
+        #div1{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+      
+        article h4{
+            font-size: 19px;
+            margin: 70px;
+        }
+        
+        article{
+            max-width: 100%;
+        }
+      
+  }
